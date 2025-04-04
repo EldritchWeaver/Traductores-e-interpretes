@@ -21,7 +21,7 @@ public class SumaMatrices {
             for (int j = 0; j < columnas; j++) {
                 matriz1[i][j] = sc.nextInt();
             }
-        
+        } // Se agregó el cierre del bucle for
 
         // Rellenamos la segunda matriz
         System.out.println("Introduce los valores de la segunda matriz:");
@@ -34,9 +34,9 @@ public class SumaMatrices {
         // Realizamos la suma de matrices
         for (int i = 0; i < filas; i++) {
             for (int j = 0; j < columnas; j++) {
-                suma[i][j] = matriz1[i][j] + matriz2[i][j]
+                suma[i][j] = matriz1[i][j] + matriz2[i][j]; // Se agregó el punto y coma
             }
-        
+        } // Se agregó el cierre del bucle for
 
         // Imprimimos la matriz resultante
         System.out.println("La matriz resultante de la suma es:");
@@ -46,5 +46,9 @@ public class SumaMatrices {
             }
             System.out.println();
         }
-    
+    } // Se agregó el cierre del método main
 }
+
+
+// El codigo solo tenia errores sintacticos, algunos bucles for no se habian cerrado debidamente,
+// y en la linea 37 faltaba un ";" al final de la linea
